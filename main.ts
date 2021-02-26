@@ -17,8 +17,7 @@ radio.onReceivedString(function (receivedString) {
             . . # . .
             . . # . .
             `)
-        motobit.enable(MotorPower.On)
-        motobit.setMotorSpeed(Motor.Left, MotorDirection.Forward, 50)
+        pins.servoWritePin(AnalogPin.P0, 180)
     } else {
         basic.showLeds(`
             . . . . .
@@ -27,7 +26,6 @@ radio.onReceivedString(function (receivedString) {
             . . . . .
             . . . . .
             `)
-        motobit.enable(MotorPower.Off)
     }
 })
 input.onButtonPressed(Button.B, function () {
