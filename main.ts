@@ -17,7 +17,7 @@ radio.onReceivedString(function (receivedString) {
             . . # . .
             . . # . .
             `)
-        pins.servoWritePin(AnalogPin.P0, 180)
+        pins.servoWritePin(AnalogPin.P1, 180)
     } else {
         basic.showLeds(`
             . . . . .
