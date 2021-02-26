@@ -26,7 +26,7 @@ radio.onReceivedString(function (receivedString) {
             . . . . .
             . . . . .
             `)
-        pins.servoWritePin(AnalogPin.P15, 0)
+        pins.servoWritePin(AnalogPin.P15, 90)
     }
 })
 input.onButtonPressed(Button.B, function () {
